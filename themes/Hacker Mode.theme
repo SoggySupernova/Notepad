@@ -1,0 +1,30 @@
+html {
+--background-color: #000;
+--button-color: #000;
+--text-color: #0f0;
+--icon-color: #0f0;
+--border-color: #0f0;
+--border-color-hovered: #0f0;
+--button-color-clicked: #000;
+--button-glow-color: #0f0,#0f0;
+--button-text-color: #0f0;
+}
+
+::selection {
+color: #000;
+background: #0f0;
+}
+
+/*
+
+you can add extra css for a specific element
+
+put !important if it doesn't work
+
+here is an example
+
+#textbox {
+border-radius: 100px !important;
+}
+
+*/
