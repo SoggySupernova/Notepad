@@ -1,4 +1,2 @@
 # Notepad
-the notepad thing i guess
-
-[insert documentation here]
+Notepad is a lightweight, standalone text editor written in pure HTML, CSS, and JavaScript.
