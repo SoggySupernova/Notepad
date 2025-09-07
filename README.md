@@ -4,6 +4,7 @@ Notepad is a lightweight, standalone text editor written in pure HTML, CSS, and 
 ## What is Notepad for?
 
 Notepad is something that *just works*. It's web-based which makes it inherently cross-platform and easy to use.
+lol that's so cringe
 
 ## Does it work with Internet Explorer?
 
