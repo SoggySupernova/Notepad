@@ -1,0 +1,47 @@
+html {
+--background-color: #000;
+--button-color: #000;
+--text-color: #dadada;
+--icon-color: #dadada;
+--border-color: #000;
+--border-color-hovered: #000;
+--button-color-clicked: #000;
+--button-glow-color: #000;
+--button-text-color: #ccc;
+}
+
+::selection {
+color: #ccc;
+background: #282828;
+}
+
+#textbox {
+
+border: none;
+scrollbar-color: #000 #000;
+scrollbar-width: none
+
+}
+
+#textbox::-webkit-resizer {
+background: #000; 
+border-width: 2px;
+border-style: solid;
+border-color: #000 #fff #fff #000;
+border-radius: 0px 0px 6.5px 0px;
+color: #fff
+}
+
+/*
+
+you can add extra css for a specific element
+
+put !important if it doesn't work
+
+here is an example
+
+#textbox {
+border-radius: 100px !important;
+}
+
+*/

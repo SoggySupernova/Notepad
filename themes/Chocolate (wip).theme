@@ -1,0 +1,34 @@
+html {
+--background-color: #0a0600;
+--button-color: #110a00;
+--text-color: #fdb;
+--icon-color: #fdb;
+--border-color: #321;
+--border-color-hovered: #552a11;
+--button-color-clicked: #321;
+--button-glow-color: #552a11;
+--button-text-color: #fdb;
+}
+
+::selection {
+color: #fdb;
+background: #552a11;
+}
+
+#textbox::spelling-error {
+/* Todo: make it brown */
+}
+
+/*
+
+you can add extra css for a specific element
+
+put !important if it doesn't work
+
+here is an example
+
+#textbox {
+border-radius: 100px !important;
+}
+
+*/
