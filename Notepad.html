@@ -438,9 +438,9 @@ if (document.querySelector("#spellcheckstyle")){
 
 async function checkForUpdates(){
 var currentNotepadVersion = "v5.0p1.1.1";
-var notepadURL = await fetch("https://soggysupernova.github.io");
+var notepadURL = await fetch("https://raw.githubusercontent.com/SoggySupernova/Notepad/refs/heads/main/Notepad.html");
 var releaseJSON = await notepadURL.text();
-var notepadversion = await fetch("https://soggysupernova.github.io/version.txt");
+var notepadversion = await fetch("https://raw.githubusercontent.com/SoggySupernova/Notepad/refs/heads/main/version.txt");
 var qya = await notepadversion.text();
 if (qya !== currentNotepadVersion+"\n"){
 if (confirm("New version available: "+qya+"Download now?")){
