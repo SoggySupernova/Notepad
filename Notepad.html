@@ -436,10 +436,10 @@ if (document.querySelector("#spellcheckstyle")){
 
 async function checkForUpdates(){
 var currentNotepadVersion = "v5.3";
-var notepadURL = await fetch("https://raw.githubusercontent.com/SoggySupernova/Notepad/refs/heads/main/Notepad.html");
-var releaseJSON = await notepadURL.text();
 var notepadversion = await fetch("https://raw.githubusercontent.com/SoggySupernova/Notepad/refs/heads/main/version.txt");
 var qya = await notepadversion.text();
+var notepadURL = await fetch(`https://raw.githubusercontent.com/SoggySupernova/Notepad/refs/tags/${qya}/Notepad.html`);
+var releaseJSON = await notepadURL.text();
 if (qya !== currentNotepadVersion+"\n"){
 if (confirm("New version available: "+qya+"Download now?")){
 localStorage.setItem("openerScript",releaseJSON);
