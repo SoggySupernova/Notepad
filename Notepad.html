@@ -442,10 +442,8 @@ if (document.querySelector("#spellcheckstyle")){
 
 function togglefont(){
 if (document.querySelector("#fontstyle")){
-  alert("Removed font style");
   var element = document.getElementById("fontstyle");element.parentNode.removeChild(element);
 }else{
-  alert("Added font style");
   let newElement = document.createElement('style');
   newElement.id = "fontstyle";
   newElement.innerHTML = "textarea{font-family:sans-serif}";
