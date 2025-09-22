@@ -160,7 +160,7 @@ left: 4px;
 <svg onclick="closetab()" id="closetabsvg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.13px" stroke-linecap="round" style="border-color: var(--coloriguess);"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
 
 </div>
-<div><textarea id="textbox" style="width:calc(100% - 20px);font-family:sans-serif" rows="32" placeholder="Enter text here..."></textarea></div>
+<div><textarea id="textbox" style="width:calc(100% - 20px)" rows="32" placeholder="Enter text here..."></textarea></div>
 
 <div id="buttons">
 <input type="file" id="qwertyuiop" multiple="" style="display:none">
@@ -436,6 +436,17 @@ if (document.querySelector("#spellcheckstyle")){
   let newElement = document.createElement('style');
   newElement.id = "spellcheckstyle";
   newElement.innerHTML = "::spelling-error{text-decoration:none}";
+  document.head.insertBefore(newElement,document.querySelector("#theme").nextSibling);
+}
+}
+
+function togglefont(){
+if (document.querySelector("#fontstyle")){
+  var element = document.getElementById("fontstyle");element.parentNode.removeChild(element);
+}else{
+  let newElement = document.createElement('style');
+  newElement.id = "fontstyle";
+  newElement.innerHTML = "textarea{font-family:sans-serif}";
   document.head.insertBefore(newElement,document.querySelector("#theme").nextSibling);
 }
 }
