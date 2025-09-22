@@ -171,6 +171,7 @@ left: 4px;
 <button id="runjavascript">Run JavaScript</button>
 <button id="runhtml">Run HTML</button>
 <button onclick="toggleLivePalette()">Live Palette</button>
+<button onclick="findAndReplace()">Find and Replace></button>
 <button onclick="restoreTheThing()">Restore the thing I guess</button>
 <button onclick="checkForUpdates()">Check for Updates</button>
 <button id="dropdownbutton">Bookmarklets
@@ -423,6 +424,9 @@ var string = "How far back?\n1 (type blank): "+tswe("")+"\n2:"+tswe("2")+"\n3:"+
 document.querySelector("#textbox").value = localStorage.getItem('save'+prompt(string))
 }
 
+function findAndReplace(){
+  document.querySelector("#textbox").value = document.querySelector("#textbox").value.replaceAll(prompt("Find:"),prompt("Replace:"))
+}
 function togglespellcheck(){
 if (document.querySelector("#spellcheckstyle")){
   var element = document.getElementById("spellcheckstyle");element.parentNode.removeChild(element);
