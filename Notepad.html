@@ -438,6 +438,10 @@ if (document.querySelector("#spellcheckstyle")){
   newElement.innerHTML = "::spelling-error{text-decoration:none}";
   document.head.insertBefore(newElement,document.querySelector("#theme").nextSibling);
 }
+const sels = document.querySelector("#textbox").selectionStart;
+const sele = document.querySelector("#textbox").selectionEnd;
+document.querySelector("#textbox").select();
+setTimeout(() => {document.querySelector("#textbox").setSelectionRange(sels,sele);},100)
 }
 
 function togglefont(){
