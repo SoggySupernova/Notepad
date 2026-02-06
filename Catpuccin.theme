@@ -1,0 +1,33 @@
+html {
+--background-color: #11111b;
+--button-color: #1e1e2e;
+--text-color: #cdd6f4;
+--icon-color: #f5e0dc;
+--border-color: #313244;
+--border-color-hovered: #585b70;
+--button-color-clicked: #313244;
+--button-glow-color: #cba6f7, #f38ba8, #fab387, #f9e2af, #a6e3a1, #89dceb, #b4befe, #cba6f7;
+--button-text-color: #cdd6f4;
+}
+
+::selection {
+color: #fdb;
+background: #313244;
+}
+
+#textbox::spelling-error {
+text-decoration: underline wavy #f38ba8 0.5px;
+}
+
+/*
+
+you can add extra css for a specific element
+
+put !important if it doesn't work
+
+here is an example
+*/
+#textbox {
+background-color: #181825 !important;
+}
+
