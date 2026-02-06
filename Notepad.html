@@ -458,7 +458,7 @@ if (document.querySelector("#spellcheckstyle")){
 }else{
   let newElement = document.createElement('style');
   newElement.id = "spellcheckstyle";
-  newElement.innerHTML = "::spelling-error{text-decoration:none}";
+  newElement.innerHTML = "::spelling-error{text-decoration:none !important}";
   document.head.insertBefore(newElement,document.querySelector("#theme").nextSibling);
 }
 const sels = document.querySelector("#textbox").selectionStart;
