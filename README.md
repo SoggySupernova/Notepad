@@ -11,7 +11,7 @@ On Firefox, you may need to allow popup windows the first time. Close the exampl
 Alternatively, you can downlaod Notepad.html directly.
 
 ## Documentation
-(soggysupernova.github.io/notepad/docs)
+[soggysupernova.github.io/notepad/docs]
 
 ## License
 GPLv3
