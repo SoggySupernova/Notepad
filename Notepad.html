@@ -96,7 +96,7 @@ h1 {position: relative; top: -16px}
 textarea:focus{
 border-color: var(--textbox-active-border-color);
 }
-#textbox{padding: 2px 5px; display:grid; margin-left: 5px;position:relative;top:-30px; font-family: "JetBrains Mono", monospace}
+#textbox{padding: 2px 5px; display:grid; margin-left: 5px;position:relative;top:-30px; font-family: "JetBrains Mono", monospace; font-variant-ligatures: none}
 #textbox::placeholder{color: var(--text-color);opacity:0.5}
 #dropdowncontent{
 display:none;
@@ -163,7 +163,7 @@ left: 4px;
 <svg onclick="closetab()" id="closetabsvg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.13px" stroke-linecap="round" style="border-color: var(--coloriguess);"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
 
 </div>
-<div><textarea id="textbox" class="jetbrains-mono-font" style="width:calc(100% - 20px)" rows="32" placeholder="Enter text here..."></textarea></div>
+<div><textarea id="textbox" style="width:calc(100% - 20px)" rows="32" placeholder="Enter text here..."></textarea></div>
 
 <div id="buttons">
 <input type="file" id="qwertyuiop" multiple="" style="display:none">
@@ -453,7 +453,7 @@ if (document.querySelector("#fontstyle")){
 }else{
   let newElement = document.createElement('style');
   newElement.id = "fontstyle";
-  newElement.innerHTML = "textarea{font-family: \"DM Sans\", sans-serif !important}";
+  newElement.innerHTML = "textarea{font-family: \"DM Sans\", sans-serif !important; font-variant-ligatures: normal !important}";
   document.head.insertBefore(newElement,document.querySelector("#theme").nextSibling);
 }
 }
