@@ -1,6 +1,6 @@
 # Notepad
 Notepad is a lightweight, standalone text editor written in pure HTML, CSS, and JavaScript.
-<br><br>**Percentage of AI-generated code: ~1#**
+<br><br>**Percentage of AI-generated code: ~1%**
 ## Install
 You have two options: the opener and the source.<br><br>
 The opener is a launcher, allowing Notepad to be updated with one click.<br>
